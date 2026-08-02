@@ -1,8 +1,25 @@
 aid: tagomi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tagomi.png
 name: Tagomi
-description: 'Tagomi is a company surfaced as a portfolio company of founders-fund, multicoin-capital,
-  pantera-capital and added to the API Evangelist network as a stub for enrichment. Sector: crypto. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: 'Tagomi was an institutional-grade cryptocurrency prime brokerage founded
+  in 2018 in New York that offered smart order routing and cross-exchange best-execution
+  across 14+ digital-asset venues, a library of advanced trading algorithms, post-trade
+  reporting, and one-click settlement and custody for professional and institutional
+  investors. Coinbase acquired Tagomi in May 2020 in an all-stock deal (reported at
+  roughly $70-100M) and folded it in as the foundation of Coinbase Prime. The tagomi.com
+  domain now 301-redirects to Coinbase Prime, and no independent Tagomi API, developer
+  portal, or documentation surface remains.'
 url: https://raw.githubusercontent.com/api-evangelist/tagomi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +27,24 @@ x-backed-by:
 - founders-fund
 - multicoin-capital
 - pantera-capital
+x-status: acquired
+x-acquired-by: coinbase
+x-acquired-date: '2020-05'
+x-successor: coinbase-prime
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-no-independent-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Crypto
+- Cryptocurrency
+- Prime Brokerage
+- Institutional Trading
+- Digital Assets
+- Trading
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +52,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tagomi-domain-security.yml
 - type: Website
   url: https://tagomi.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
